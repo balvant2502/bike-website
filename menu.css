@@ -9,6 +9,7 @@ body {
 }
 
 .header {
+   margin: 0;
    min-height: 100vh;
    width: 100%;
    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(view-cool-powerful-motorcycle.jpg);
@@ -19,7 +20,7 @@ body {
 
 nav {
    display: flex;
-   padding: 3% 6%;
+   padding: 1% 3%;
    justify-content: space-between;
    align-items: center;
 }
@@ -34,17 +35,23 @@ nav {
 }
 
 .har img {
+   
+   height: 10vh;
    margin: 0;
-   width: 200px;
-   mix-blend-mode: multiply;
+   width: 90px;
+   mix-blend-mode: transperent;
+   
 }
 
 .nav-links {
+   padding: 10px;
    flex: 1;
-   text-align: right;
+   text-align: left;
 }
 
 .nav-links ul li {
+   margin-bottom: 0;
+   margin-top: 0;
    list-style: none;
    display: inline-block;
    padding: 8px 12px;
@@ -52,21 +59,33 @@ nav {
 }
 
 .nav-links ul li a {
+   
    padding: 9px;
-   color: white;
+   color:black;
    text-decoration: none;
    font-size: 20px;
-   transition: 1s;
+   transition: 0.5s;
+   font-weight: 500;
+}
+.signin a{
+   text-decoration:none;
+   color: black;
+   font-weight: 500;
+   font-size: 20px;
+}
+.signin a:hover{
+   color:#f7c631f1;
 }
 
 .nav-links ul li a:hover {
    background-color: #f7c631f1;
+   color:white;
 }
 
 .quote {
    position: absolute;
    color: white;
-   margin-top: 0;
+   margin-top: 15%;
    margin-left: 6%;
    font-family: sans-serif;
 }
@@ -126,9 +145,44 @@ nav {
    
    color:white;
 }
-.model img{
-   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+.model {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+   margin: 20px 0;
 }
+
+.model-item1, .model-item2 {
+   text-align: center;
+   margin: 20px;
+}
+
+.model-item1 img, .model-item2 img {
+   width: 100%;
+   max-width: 300px; /* Adjust the max-width as needed */
+   height: auto;
+}
+
+.model-item1 p, .model-item2 p {
+   margin-top: 10px;
+   font-size: 16px;
+   font-weight: 700;
+   color: black;
+
+}
+
+
+
+
+
+.black{
+   background-color: black;
+   margin:auto;
+   padding: 30px;
+}
+.white{
+   background-color: white;
+   padding: 5px;
+}
+
